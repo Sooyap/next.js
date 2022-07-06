@@ -1236,7 +1236,7 @@ const server = http.createServer(async (req, res) => {
     res.end('internal server error')
   }
 })
-const currentPort = parseInt(process.env.PORT, 10) || 3000
+const currentPort = process.env.PORT || 3000
 
 server.listen(currentPort, (err) => {
   if (err) {
